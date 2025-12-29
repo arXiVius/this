@@ -1,20 +1,60 @@
+# THIS // THE INLAY
+
+A high-fidelity digital plaque experience featuring oxidized bronze textures, metallic reflections, and a responsive parallax interface.
+
+> [!CAUTION]
+> THERE IS NO EXPLANATION, NO INTERACTION, AND NO DEEPER MEANING BEYOND THE PAGE ITSELF. IT EXISTS TO BE ITSELF, AND NOTHING ELSE.
+
+## 🛠 TECH SPEC
+
+- **FRAMEWORK**: [React 19](https://react.dev/) (via ESM)
+- **BUNDLER**: [Vite 6](https://vitejs.dev/)
+- **LANGUAGE**: [TypeScript](https://www.typescriptlang.org/)
+- **STYLING**: Brutalist Bronze CSS + Tailwind (CDN)
+- **VIBE**: Oxidized, metallic, non-relational
+
+## 🚀 DEPLOYMENT DIRECTORY
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (Latest LTS)
+- A tolerance for static states
+
+### Local Setup
+
+1. **Clone & Enter**:
+
+   ```bash
+   git clone <repository-url>
+   cd this
+   ```
+
+2. **Fuel Up**:
+
+   ```bash
+   npm install
+   ```
+
+3. **Ignition**:
+   ```bash
+   npm run dev
+   ```
+
+## 📂 PROJECT STRUCTURE
+
+- `App.tsx`: The Inlay engine. Contains the parallax logic and oxidized finish rendering.
+- `index.html`: The bronze canvas with Tailwind integration and custom keyframes.
+- `metadata.json`: The digital certificate of existence.
+
+## 🏁 INLAY CHECK
+
+- [x] Patina shift operational
+- [x] Metallic reflections active
+- [x] Parallax depth at 100%
+- [x] Minimalist digital plaque validated
+
+---
+
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+OXIDIZED_BRONZE_FINISH // SHYT_SUITE
 </div>
-
-# Run and deploy your AI Studio app
-
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/drive/1VQIyhl5X2srD44eBfCT8bbNUlmQR28zx
-
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
