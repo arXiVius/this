@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Space+Mono&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bronze: {
+                            dark: '#1a1612',
+                            metallic: '#8c6239',
+                            bright: '#d4af37',
+                        },
+                        patina: {
+                            base: '#2d5a5a',
+                            light: '#4ea5a5',
+                            vibrant: '#72ffff',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Space Grotesk"', 'sans-serif'],
+                        mono: ['"Space Mono"', 'monospace'],
+                    },
+                    keyframes: {
+                        'frame-reveal': {
+                            '0%': { opacity: '0', transform: 'scale(0.98) translateY(10px)' },
+                            '100%': { opacity: '1', transform: 'scale(1) translateY(0)' },
+                        },
+                        'text-reveal': {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        'fade-in': {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '0.6' },
+                        },
+                        'line-grow': {
+                            '0%': { width: '0' },
+                            '100%': { width: '100%' },
+                        },
+                        'patina-shift': {
+                            '0%': { backgroundPosition: '0% 0%' },
+                            '100%': { backgroundPosition: '300% 300%' },
+                        }
+                    },
+                    animation: {
+                        'frame-reveal': 'frame-reveal 2.5s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+                        'text-reveal': 'text-reveal 1.8s 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+                        'fade-in': 'fade-in 1s 1.5s forwards',
+                        'fade-in-delayed': 'fade-in 1.5s 2s forwards',
+                        'line-grow': 'line-grow 2s 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+                        'patina-shift': 'patina-shift 15s linear infinite',
+                    }
+                }
+            }
+        }
+    </script>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-[#1a1612] m-0 p-0 overflow-hidden cursor-default selection:bg-patina-light selection:text-bronze-dark">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
