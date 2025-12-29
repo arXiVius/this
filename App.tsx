@@ -74,7 +74,7 @@ const App: React.FC = () => {
             className="text-[clamp(2rem,5vw,4.5rem)] leading-[0.95] text-transparent bg-clip-text bg-gradient-to-b from-[#b87333] to-[#4a7c7c] drop-shadow-[0_2px_1px_rgba(0,0,0,0.5)] tracking-tighter translate-y-[20px] opacity-0 animate-text-reveal group-hover:from-bronze-bright group-hover:to-patina-vibrant transition-[background] duration-[2000ms]"
             style={{ textShadow }}
           >
-            THIS IS A ONE-PAGE SITE<br />
+            THYS IS A ONE-PAGE SITE<br />
             THAT CONTAINS EXACTLY<br />
             WHAT YOU ARE LOOKING AT.
           </h1>
